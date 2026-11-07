@@ -8,7 +8,6 @@ import { Testimonials } from "@/components/site/Testimonials";
 import { Centres } from "@/components/site/Centres";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
-import { AiCopilot } from "@/components/site/AiCopilot";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -38,7 +37,6 @@ function Index() {
         <Contact />
       </main>
       <Footer />
-      <AiCopilot />
     </div>
   );
 }
