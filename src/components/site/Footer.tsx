@@ -1,4 +1,5 @@
-import { Instagram, Facebook, MessageCircle, Zap, ArrowRight } from "lucide-react";
+import { Instagram, Facebook, MessageCircle, ArrowRight } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const quickLinks = [
   { label: "About", href: "#about" },
@@ -44,16 +45,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2.5">
-              <span className="relative grid place-items-center w-11 h-11 rounded-2xl overflow-hidden">
-                <span className="absolute inset-0 bg-gradient-to-br from-[color:var(--color-primary)] to-[oklch(0.62_0.21_35)] rounded-2xl" />
-                <Zap className="relative w-5 h-5 text-white fill-white z-10" />
-              </span>
-              <div>
-                <span className="font-display font-extrabold text-xl block leading-none">Little Spartans</span>
-                <span className="text-[10px] text-white/50 tracking-wider uppercase">Sports Academy</span>
-              </div>
-            </div>
+            <img src={logo} alt="Little Spartans" className="h-16 w-auto max-w-[230px] object-contain" />
             <p className="mt-4 text-white/70 max-w-sm leading-relaxed text-sm">
               Big adventures for little people. Chennai's playful sports and physical development academy for ages 1.5 – 10.
             </p>
