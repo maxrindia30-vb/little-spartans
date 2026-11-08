@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Link } from "@tanstack/react-router";
-import { Menu, X, Zap, LogIn } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const nav = [
   { label: "Home", href: "#home" },
@@ -44,20 +44,9 @@ export function Header() {
         }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
-        {/* Previous Logo */}
-        <a href="#home" className="flex items-center gap-2.5 group">
-          <span className="relative grid place-items-center w-10 h-10 rounded-2xl overflow-hidden shadow-lg shadow-primary/20">
-            <span className="absolute inset-0 bg-gradient-to-br from-[color:var(--color-primary)] to-[oklch(0.62_0.21_35)] rounded-2xl group-hover:scale-110 transition-transform duration-300" />
-            <Zap className="relative w-5 h-5 text-white fill-white z-10 animate-pulse" />
-          </span>
-          <div className="hidden sm:block">
-            <span className="font-display font-extrabold text-lg text-navy leading-none block group-hover:text-primary transition-colors">
-              Little Spartans
-            </span>
-            <span className="text-[10px] text-muted-foreground font-medium tracking-wider uppercase leading-none">
-              Sports Academy
-            </span>
-          </div>
+        {/* Little Spartans brand logo */}
+        <a href="#home" aria-label="Little Spartans home" className="flex items-center shrink-0">
+          <img src={logo} alt="Little Spartans" className="h-12 md:h-14 w-auto max-w-[190px] object-contain" />
         </a>
 
         {/* Desktop Nav */}
